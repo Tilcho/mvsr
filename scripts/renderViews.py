@@ -7,7 +7,7 @@ import os
 OBJ_PATH = "/home/simon/Documents/MVSR Lab/mvsr/data/models/morobot-s_Achse-1A_gray.obj"
 OUTPUT_DIR = "renders1"
 IMG_WIDTH, IMG_HEIGHT = 640, 480
-VIEWS = 8
+VIEWS = 72
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

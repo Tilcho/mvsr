@@ -1,0 +1,4 @@
+python3 yolo_detect.py --model my_model.pt --source '/home/simon/Documents/MVSR Lab/mvsr/data/rgb/0.png' --resolution 640x480
+
+
+python3 yolo_detect.py --model my_model.pt --source usb0 --resolution 640x480

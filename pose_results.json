@@ -1,0 +1,17 @@
+[
+    {
+        "bbox": [
+            411,
+            125,
+            537,
+            263
+        ],
+        "center": [
+            474,
+            194
+        ],
+        "matched_template": "yaw_306_pitch_324_roll_0.png",
+        "num_keypoints_crop": 16,
+        "num_matches": 3
+    }
+]

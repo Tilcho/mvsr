@@ -5,17 +5,17 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
 # Load the mesh
-mesh = trimesh.load('/home/simon/Documents/MVSR Lab/mvsr/data/models/morobot-s_Achse-3B_gray.obj')
-#mesh = trimesh.load('/home/simon/Documents/MVSR Lab/mvsr/data/models/morobot-s_Achse-1A.obj')
+#mesh = trimesh.load('/home/simon/Documents/MVSR Lab/mvsr/data/models/morobot-s_Achse-3B_gray.obj')
+mesh = trimesh.load('/home/simon/Documents/MVSR Lab/mvsr/data/models/morobot-s_Achse-1A_gray.obj')
 vertices = mesh.vertices
 faces = mesh.faces
 print(f"Total number of vertices: {len(vertices)}")
 
 # Vertex indices you want to label
 # For 3B
-step = 1800
+#step = 1800
 # For 1A
-#step = 800
+step = 800
 
 selected_indices = np.arange(0, len(vertices), step)
 points = vertices[selected_indices]
