@@ -39,14 +39,15 @@ to run it: python runPoseEstimation.py -img <0...9>
 3. File Structure Overview
 mvsr/
 ├── data/                  # Dataset & CAD models
-├── docker_foundationpose/ # Dockerfile and scripts for FoundationPose
 ├── env/                   # Python virtualenv (not included)
 ├── env_yolo/              # YOLO environment (not included)
-├── notebooks/             # Jupyter notebooks for exploration
+├── morobots/              # Data for FoundationPose
 ├── scripts/               # Scripts for rendering, detection, pose estimation
-├── slides_lab.pdf         # Project presentation
+├── screenshots/           # Misc Photos for documentation
+├── results/               # Results from Pose Estimation and Classification
 ├── requirements.txt       # Base Python dependencies
 ├── requirements_yolo.txt  # YOLO-specific dependencies
+├── runs/                  # YOLO output directory
 ├── README.txt             # This file
 
 4. Running the Applications
