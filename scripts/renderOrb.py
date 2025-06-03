@@ -8,7 +8,7 @@ from math import radians
 OBJ_PATH = "/home/simon/Documents/MVSR Lab/mvsr/data/models/morobot-s_Achse-1A_gray.obj"
 OUTPUT_DIR = "render_euler_1Ag"
 IMG_WIDTH, IMG_HEIGHT = 640, 480
-DIST = 2.5
+DIST = 1.5
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 mesh = o3d.io.read_triangle_mesh(OBJ_PATH)
@@ -50,8 +50,10 @@ def euler_to_rot_matrix(yaw, pitch, roll):
 
 # Render every 5° in yaw and pitch
 print("Rendering yaw/pitch grid...")
-for pitch in range(0, 361, 18):
-    for yaw in range(0, 360, 18):
+for pitch in range(0, 131, 10):
+    if pitch >= 0 and pitch <= 40: continue
+    if pitch >= 320 and pitch <= 360: continue
+    for yaw in range(0, 360, 10):
         roll = 0  # keep fixed
         if yaw >= 70 and yaw <= 110: continue
         if yaw >= 250 and yaw <= 290: continue
