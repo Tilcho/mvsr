@@ -1,7 +1,6 @@
 import os
 import cv2
 import numpy as np
-import json
 from math import radians
 import matplotlib.pyplot as plt
 
@@ -10,7 +9,6 @@ import matplotlib.pyplot as plt
 IMG_PATH = "/home/simon/Documents/MVSR Lab/mvsr/data/rgb/0enhanced.png"
 YOLO_PATH = "/home/simon/Documents/MVSR Lab/mvsr/detections_0.txt"
 RENDER_DIR = "/home/simon/Documents/MVSR Lab/mvsr/render_euler_1Ag"
-OUTPUT_JSON = "pose_results.json"
 
 IMG_WIDTH, IMG_HEIGHT = 640, 480
 sift = cv2.SIFT_create()
