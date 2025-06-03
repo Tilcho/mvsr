@@ -1,0 +1,11 @@
+numpy
+opencv-python
+matplotlib
+open3d
+open3d[headless]
+scikit-image
+trimesh
+PyOpenGL
+pyglet
+ultralytics
+
