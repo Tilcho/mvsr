@@ -61,24 +61,20 @@ Step-by-Step
 2. Activate Python Environment
    Follow the instructions in section 2.
 
-3. Run Detection
-   YOLO detection is triggered via:
-   python3 scripts/<filetorun>.py
-
-4. Run Pose Estimation
+3. Run Pose Estimation
    Execute FoundationPose inside Docker as described.
 
 
-5. Used Methods
+4. Used Methods
 - Object Detection: YOLOv11s (Dataset created by ChatGPT (somewhat) and labeled with Label Studio)
 - Pose Estimation: FoundationPose
 - Matching: PnP + Keypoint detection
 
-6. Results Visualization
+5. Results Visualization
 - Output images and pose overlays are saved in results/
 - Includes 3D bounding boxes overlaid on RGB-D inputs and Yolo classification images
 
-7. Sources
+6. Sources
 - YOLOv11s GitHub: https://github.com/ultralytics/ultralytics
   Edje Electronics https://www.youtube.com/watch?v=r0RspiLG260&t=405s
 - FoundationPose GitHub: https://github.com/NVlabs/FoundationPose
